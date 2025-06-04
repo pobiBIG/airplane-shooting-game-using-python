@@ -13,7 +13,7 @@ Alienimage = [ 'image/외계인1.png','image/외계인2.png']
 AngryAlien = ['image/공격1.png','image/공격2.png']
 Bossimage = ['image/보스.png','image/화내는 보스.png']
 Henchmanimage = ['image/외계인3.png', 'image/외계인4.png']
-Sound = ['music/폭발1.mp3','music/폭발2.mp3']
+Sound = ['폭발1.mp3','폭발2.mp3']
 
 #이미지 게임에 불러오기 함수
 def Object(obj, x, y):
@@ -32,10 +32,10 @@ def initGame():
     die = pygame.image.load('image/explosion1.png')  #외계인 죽을 때 그림
     A_die = pygame.image.load('image/explosion2.png')  #화난 외계인 죽을 때 그림
     B_die = pygame.image.load('image/explosion3.png')  #보스 죽을 때 그림
-    pygame.mixer.music.load('music/backgroundmusic.wav')  #배경 음악
+    pygame.mixer.music.load('backgroundmusic.wav')  #배경 음악
     pygame.mixer.music.set_volume(0.5)
-    Gameoversound = pygame.mixer.Sound('music/crash.mp3')  #게임 오버 음악
-    missilesound = pygame.mixer.Sound('music/missile.mp3')  #미사일 음악
+    Gameoversound = pygame.mixer.Sound('crash.mp3')  #게임 오버 음악
+    missilesound = pygame.mixer.Sound('missile.mp3')  #미사일 음악
     pygame.mixer.music.play(-1)  #계속해서 실행
     clock = pygame.time.Clock()
 
